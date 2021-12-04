@@ -229,12 +229,12 @@
     top: 42%;
     position: absolute;
   }
-  
+
   #popup_container {
     display: none;
     width: 100%;
     height: 100%;
-    background: rgba(50, 50, 50, 0.5);
+    background: rgba(0, 65, 142, 0.26);
     position: fixed;
     top: 0;
     z-index: 500;
@@ -243,14 +243,19 @@
   #popup {
     background: white;
     width: 400px;
-    height: 300px;
+    height: 250px;
     margin: 150px auto;
+  }
+  .hidebutton {
+    display: flex;
+    align-items: center;
   }
 </style>
 <script>
   function showPopup() {
     document.getElementById("popup_container").style.display = "block";
   }
+
   function hidePopup() {
     document.getElementById("popup_container").style.display = "none";
   }
@@ -305,15 +310,18 @@
     Bangladesh
     Barbados
     Belarus
-    <body>
-       <button onclick="showPopup()">Belgium</button>
-       <div id="popup_container">
-          <div id="popup">
-             <button onclick="hidePopup()">Hide popup</button>
-							<a href="https://www.pommesfritesnyc.com/">Pommes Frite</a>
-            </div>
-         </div>
-    </body>
+			
+     <button onclick="showPopup()">Belgium</button>
+     <div id="popup_container">
+        <div id="popup">
+          	<div id="hidebutton">
+              <button onclick="hidePopup()">Hide popup</button>
+          </div>
+        <a href="https://www.pommesfritesnyc.com/">Pommes Frite</a>
+          <img class="fit" src="pommefrite.jpg" alt="pomme frites">
+      </div>
+       </div>
+
     Belize
     Benin
     Bhutan
